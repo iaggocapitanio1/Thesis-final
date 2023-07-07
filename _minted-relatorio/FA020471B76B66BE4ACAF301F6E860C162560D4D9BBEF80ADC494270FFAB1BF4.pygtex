@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{DATA\PYGZus{}UPLOAD\PYGZus{}MAX\PYGZus{}MEMORY\PYGZus{}SIZE} \PYG{o}{=} \PYG{n}{mega\PYGZus{}bytes\PYGZus{}to\PYGZus{}bits}\PYG{p}{(}\PYG{n}{mega}\PYG{o}{=}\PYG{l+m+mi}{50}\PYG{p}{)}
+\PYG{n}{REST\PYGZus{}FRAMEWORK} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{l+s+s1}{\PYGZsq{}DEFAULT\PYGZus{}THROTTLE\PYGZus{}CLASSES\PYGZsq{}}\PYG{p}{:} \PYG{p}{[}
+        \PYG{l+s+s1}{\PYGZsq{}rest\PYGZus{}framework.throttling.AnonRateThrottle\PYGZsq{}}\PYG{p}{,}
+        \PYG{l+s+s1}{\PYGZsq{}rest\PYGZus{}framework.throttling.UserRateThrottle\PYGZsq{}}
+    \PYG{p}{],}
+    \PYG{l+s+s1}{\PYGZsq{}DEFAULT\PYGZus{}THROTTLE\PYGZus{}RATES\PYGZsq{}}\PYG{p}{:} \PYG{p}{\PYGZob{}}
+        \PYG{l+s+s1}{\PYGZsq{}anon\PYGZsq{}}\PYG{p}{:} \PYG{l+s+s1}{\PYGZsq{}100/day\PYGZsq{}}\PYG{p}{,}
+        \PYG{l+s+s1}{\PYGZsq{}user\PYGZsq{}}\PYG{p}{:} \PYG{l+s+s1}{\PYGZsq{}5000/day\PYGZsq{}}
+    \PYG{p}{\PYGZcb{},}
+    \PYG{c+c1}{\PYGZsh{} other configurations}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

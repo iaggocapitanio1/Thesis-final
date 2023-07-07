@@ -1,0 +1,350 @@
+\documentclass[12pt,a4paper,twoside]{ipb}
+
+% comentar caso seja uma disseração de mestrado
+%\usepackage{projei}
+\usepackage{csquotes} 
+\usepackage[english]{babel}
+\graphicspath{{./images/}}
+\usepackage{listings} % incluir listagens
+\usepackage{url} % typeset URL's
+\usepackage[colorlinks=true,
+                    urlcolor=black, %blue
+                    linkcolor=black,
+                    citecolor=black, %cor das citações
+                    bookmarks=true,
+                    pdfstartview=FitH]{hyperref}
+
+% Pode ser usado biblatex
+\usepackage[style=ieee,backend=biber]{biblatex}
+\addbibresource{lib/refs.bib}
+\usepackage{pgffor}
+
+\usepackage{hyperref}
+
+\usepackage{lipsum}
+
+\usepackage{amsmath}
+
+\usepackage{tabulary}
+
+\usepackage{booktabs}
+
+\usepackage{graphicx}
+
+\usepackage{layout}
+
+\usepackage[table]{xcolor}
+
+\usepackage{subcaption}
+
+\usepackage{array}
+
+\usepackage{multirow}
+
+\usepackage{soul}
+
+\usepackage{eurosym}
+
+\usepackage{amsfonts}
+
+\usepackage{listings}
+
+\usepackage{float}
+
+%\usepackage[newfloat]{minted}
+\usepackage[outputdir=/home/iaggo/anaconda3/bin/pygmentize/]{minted}
+
+\usepackage{appendix}
+
+% Add this command to define the problematic character
+\DeclareUnicodeCharacter{0301}{\'{e}} % Replace 0301 with the Unicode code of the character causing the error
+
+
+\definecolor{jsongray}{RGB}{100,100,100}
+\definecolor{jsonlightgray}{RGB}{200,200,200}
+\definecolor{darkgray}{RGB}{33,47,60}
+\definecolor{jsonpurple}{RGB}{128,0,128}
+
+
+\definecolor{keywordcolor}{rgb}{0.85, 0.49, 0.19} % Orange for packages (like "logger")
+\definecolor{keywordcolor2}{rgb}{1, 0.372, 0.12} % Blue for info
+\definecolor{keywordcolor3}{rgb}{0, 0.06, 0.93} % Blue for info
+\definecolor{stringcolor}{rgb}{0.33, 0.33, 0.33}  % Dark Gray for strings
+\definecolor{commentcolor}{rgb}{0.07, 0.549, 0.29}    % Green for comments
+\definecolor{numbercolor}{rgb}{0.39, 0.56, 0.86}  % Blue for numbers
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{backcolour}{rgb}{1,1,1} % White for background
+
+\lstdefinestyle{VSCode}{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=[1]\color{keywordcolor},
+    keywordstyle=[2]\color{keywordcolor2},
+    keywordstyle=[3]\color{keywordcolor3},
+    stringstyle=\color{stringcolor},
+    commentstyle=\color{commentcolor},
+    numberstyle=\color{numbercolor},
+    tabsize=2,
+    showstringspaces=false,
+    backgroundcolor=\color{backcolour},
+    rulecolor=\color{backcolour},
+    frame=single, 
+    rulecolor=\color{codegray},
+    showspaces=false,
+    showtabs=false, 
+    breaklines=true,
+    postbreak=\mbox{\textcolor{codegray}{$\hookrightarrow$}\space},
+    morekeywords=[2]{logger, cv, numpy, settings, }  % Defining "info" as a keyword
+    morekeywords=[3]{canny_frame, dilatation, dilated_frame, eroded_frame, contours, ratio, clean_contour_points, contour, contours, bbox, show_frame}
+}
+
+\lstdefinelanguage{Python}{
+  keywords={and, as, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, with, yield, None, True, False, bool, int, float, str, list},
+  comment=[l]{\#},
+  string=[b]{'''},
+  string=[b]{"""}
+  string=[b]{'},
+  string=[b]{"},
+  showstringspaces=false
+}
+\usepackage{color}
+\definecolor{keywordcolor}{rgb}{0.58,0,0.82}
+\definecolor{stringcolor}{rgb}{0.67,0.33,0}
+\definecolor{commentcolor}{rgb}{0.33,0.33,0.33}
+\definecolor{numbercolor}{rgb}{0,0,1.0}
+\definecolor{pygreen}{rgb}{0.0,0.5,0.0}
+
+\lstdefinestyle{pycharm}{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{keywordcolor}\bfseries,
+    stringstyle=\color{stringcolor},
+    commentstyle=\color{commentcolor},
+    numberstyle=\color{numbercolor},
+    showstringspaces=false,
+    identifierstyle=\color{black},
+    tabsize=2,
+    emph={self}, emphstyle=\color{pygreen},
+    literate=*{:}{{\textcolor{keywordcolor}{:}}}{1}%
+             {=}{{\textcolor{keywordcolor}{=}}}{1}%
+             {-}{{\textcolor{keywordcolor}{-}}}{1}%
+             {+}{{\textcolor{keywordcolor}{+}}}{1}%
+             {*}{{\textcolor{keywordcolor}{*}}}{1}%
+             {!}{{\textcolor{keywordcolor}{!}}}{1}%
+             {(}{{\textcolor{keywordcolor}{(}}}{1}%
+             {)}{{\textcolor{keywordcolor}{)}}}{1}%
+             {[}{{\textcolor{keywordcolor}{[}}}{1}%
+             {]}{{\textcolor{keywordcolor}{]}}}{1}%
+             {<}{{\textcolor{keywordcolor}{<}}}{1}%
+             {>}{{\textcolor{keywordcolor}{>}}}{1}%
+             {/}{{\textcolor{keywordcolor}{/}}}{1}%
+             {^}{{\textcolor{keywordcolor}{^}}}{1}%
+             {&}{{\textcolor{keywordcolor}{&}}}{1}%
+             {~}{{\textcolor{keywordcolor}{~}}}{1}%
+             {.}{{\textcolor{keywordcolor}{.}}}{1}%
+}
+
+\lstdefinelanguage{yaml}{
+  keywords={true,false,null,y,n},
+  keywordstyle=\color{darkgreen},
+  basicstyle=\ttfamily\small,
+  sensitive=false,
+  comment=[l]{\#},
+  morecomment=[s]{/*}{*/},
+  commentstyle=\color{purple}\ttfamily,
+  stringstyle=\color{red}\ttfamily,
+  showstringspaces=false,
+  identifierstyle=\color{blue},
+  morestring=[b]',
+  morestring=[b]"
+}
+\lstdefinelanguage{json}{
+    basicstyle=\ttfamily\small\color{jsonlightgray},
+    columns=fullflexible,
+    showstringspaces=false,
+    commentstyle=\color{gray}\upshape,
+    keywordstyle=\color{jsongray}\bfseries,
+    stringstyle=\color{jsonpurple},
+    breakatwhitespace=true,
+    morestring=[b]",
+    morecomment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    morekeywords={true,false,null},
+    breaklines=true, % Wrap lines within the frame
+}
+
+\lstset{
+    language=json,
+    frame=single,
+    numbers=left,
+    numberstyle=\scriptsize\color{gray},
+    stepnumber=1,
+    numbersep=5pt,
+    captionpos=b,
+    tabsize=2,
+    xleftmargin=15pt,
+    xrightmargin=15pt,
+    framexleftmargin=15pt,
+    framextopmargin=5pt,
+    framexbottommargin=5pt,
+    showspaces=false,
+    showtabs=false,
+    showstringspaces=false,
+    breaklines=true,
+}
+
+\lstdefinestyle{linux}{
+    backgroundcolor=\color{white},
+    basicstyle=\color{darkgray!70!black}\small\bfseries,
+    keywordstyle=\color{blue!70!black}\bfseries,
+    commentstyle=\color{gray}\itshape,
+    stringstyle=\color{darkgray},
+    frame=single,
+    framexleftmargin=15pt,
+    framexrightmargin=15pt,
+    framextopmargin=5pt,
+    framexbottommargin=5pt,
+    rulecolor=\color{jsonlightgray}, % Set frame color to dark gray
+    showstringspaces=false,
+    xleftmargin=15pt,
+    xrightmargin=5pt,
+    stepnumber=1,
+    numbersep=5pt,
+    captionpos=b,
+    numbers=left,
+    numberstyle=\scriptsize\color{gray},
+    breaklines=true, % Wrap lines within the frame
+}
+
+
+\lstdefinestyle{nginx}{
+    basicstyle=\color{gray!70!black}\small\ttfamily,
+    keywordstyle=\color{blue!70!black}\bfseries,
+    commentstyle=\color{gray!60}\bfseries,
+    stringstyle=\color{white},
+    morekeywords={server, location, root, index},
+    breaklines=true,
+    showstringspaces=false,
+}
+
+% Create a new environment for Nginx configuration listing
+
+
+% Define the Nginx language
+\lstdefinelanguage{nginx}{
+    keywords={worker_processes, http, upstream, server, listen, location, proxy_pass, proxy_set_header, proxy_read_timeout, proxy_send_timeout},
+    keywordstyle=\bfseries\color{blue},
+    morestring=[b]",
+    morecomment=[l]{\#},
+}
+
+%\title{Desenvolvimento de um Sistema de Monitorização para Reservatórios para a Santa Casa da Misericórdia de Bragança}
+
+%%\title{Development of an Integrated System for Industrial Laundry at Santa Casa da Misericórdia de Bragança}
+
+%%(jpc)\title{IoT system applied to detergent supervision in industrial washing machines}
+
+\title{\textbf{Development of Traceability Solution for Furniture Components}}
+
+\author{Iaggo Capitanio - 52498}
+%\authnum{1}
+%\secondauthor{Nome do Aluno - Número Mecanográfico}
+%\secauthnum{2}
+
+\supervisor{Prof. Dr. João Paulo Coelho}
+\cosupervisor{Prof. Dr. Luan José Franchini Ferreira }
+\cosupervisor{Filipe Mofreita, Carpintaria Mofreita}
+\cosupervisor{Prof. José Alexandre de Carvalho Gonçalves}
+\cosupervisors{
+    Prof. Dr. Luan José Franchini Ferreira,
+    Filipe Mofreita - Carpintaria Mofreita,
+    Prof. Dr. José Alexandre de Carvalho Gonçalves
+}
+
+% Para definir o ano letivo
+\courseyear{2023}
+
+% Para nao mostrar a lista de tabelas
+%\tablespagefalse
+
+\makeglossaries
+\loadglsentries{acronym}
+\loadglsentries{glossary}
+
+
+
+%http://tex.stackexchange.com/questions/59572/custom-page-numbering-for-appendix
+\usepackage{etoolbox}
+\usepackage{verbatim}
+
+\begin{document}
+	
+% Coloca a capa, primeira pagina e outros
+
+\beforepreface
+
+%\cleardoublepage
+
+\prefacesection{Dedication}
+\input{chapters/dedicatoria}
+
+%\cleardoublepage
+
+\prefacesection{Acknowledgment}
+\input{chapters/agradecimento}
+
+%\cleardoublepage
+
+\prefacesection{Abstract}
+\input{chapters/abstract}
+
+%\cleardoublepage
+
+\prefacesection{Resumo}
+\input{chapters/resumo}
+
+% Coloca indices
+\afterpreface
+
+\printglossary[type=\acronymtype,nonumberlist,title={List of Acronyms}]
+
+\newpage
+
+\bodystart
+
+% Capitulos do documento
+\cleardoublepage
+\input{chapters/cap01}
+\cleardoublepage
+\input{chapters/cap02}
+\cleardoublepage
+\input{chapters/cap03}
+\cleardoublepage
+\input{chapters/cap04}
+\cleardoublepage
+\input{chapters/cap05}
+\cleardoublepage
+\input{chapters/cap06}
+
+%% estilo de referências. outros valores posíveis são 'plain' e 'abbrv' apalike
+%\bibliographystyle{plain}
+%% listagem de referências
+%\bibliography{lib/refs}
+
+%  Caso seja usado biblatex
+\printbibliography
+% Apêndices
+\appendix
+
+%http://tex.stackexchange.com/questions/59572/custom-page-numbering-for-appendix
+\pretocmd{\chapter}{%
+	\clearpage
+	\pagenumbering{arabic}%
+	\renewcommand*{\thepage}{\thechapter\arabic{page}}%
+}{}{}
+
+\input{chapters/apendice03}
+\input{chapters/apendice01}
+\input{chapters/apendice02}
+
+\end{document}

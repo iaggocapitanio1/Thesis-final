@@ -1,0 +1,33 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{p}{[}
+\PYG{+w}{    }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{n+nt}{\PYGZdq{}id\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}leftover\PYGZus{}am9gkLB9We7bQD4Z\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}url\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}http://193.136.195.25/ww4/api/v1/storages/leftover/leftover\PYGZus{}am9gkLB9We7bQD4Z/\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}created\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}2023\PYGZhy{}05\PYGZhy{}29T04:14:33.632861Z\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}modified\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}2023\PYGZhy{}05\PYGZhy{}29T04:14:33.632935Z\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}file\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}http://193.136.195.25/media/internal/leftovers/images/default/image\PYGZus{}ayAkgDz.jpg\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}corners\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}type\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Polygon\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{                }\PYG{n+nt}{\PYGZdq{}coordinates\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{p}{[}
+\PYG{+w}{                    }\PYG{p}{[}\PYG{l+m+mi}{510}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{422}\PYG{p}{],}
+\PYG{+w}{                    }\PYG{p}{[}\PYG{l+m+mi}{510}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{480}\PYG{p}{],}
+\PYG{+w}{                    }\PYG{p}{[}\PYG{l+m+mi}{567}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{481}\PYG{p}{],}
+\PYG{+w}{                    }\PYG{p}{[}\PYG{l+m+mi}{567}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{423}\PYG{p}{],}
+\PYG{+w}{                    }\PYG{p}{[}\PYG{l+m+mi}{510}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{422}\PYG{p}{]}
+\PYG{+w}{                }\PYG{p}{]}
+\PYG{+w}{            }\PYG{p}{\PYGZcb{},}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}treated\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{false}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}confirmed\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{k+kc}{true}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}x\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mf}{510.0}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}y\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mf}{422.0}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}width\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mf}{57.0}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}height\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mf}{145.0}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}thickness\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mf}{\PYGZhy{}1.0}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}ratio\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mf}{1.1500877}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}klass\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Oak\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}batch\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}default\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}location\PYGZus{}x\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nt}{\PYGZdq{}location\PYGZus{}y\PYGZdq{}}\PYG{p}{:}\PYG{+w}{ }\PYG{l+m+mi}{0}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\PYG{p}{]}
+\end{Verbatim}

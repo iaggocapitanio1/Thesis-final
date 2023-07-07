@@ -1,0 +1,35 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{schemas}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{project}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{type}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{object}
+\PYG{+w}{    }\PYG{n+nt}{title}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Project}
+\PYG{+w}{    }\PYG{n+nt}{description}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Contains the information of a project}
+\PYG{+w}{    }\PYG{n+nt}{properties}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{id}\PYG{p}{:}
+\PYG{+w}{        }\PYG{n+nt}{description}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Unique identifier of the project}
+\PYG{+w}{        }\PYG{n+nt}{example}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{urn:ngsi\PYGZhy{}ld:Project:[name]}
+\PYG{+w}{        }\PYG{n+nt}{format}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{uri}
+\PYG{+w}{        }\PYG{n+nt}{type}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{string}
+\PYG{+w}{        }\PYG{n+nt}{x\PYGZhy{}ngsi}\PYG{p}{:}
+\PYG{+w}{          }\PYG{n+nt}{type}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Property}
+\PYG{+w}{      }\PYG{n+nt}{type}\PYG{p}{:}
+\PYG{+w}{        }\PYG{n+nt}{description}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{NGSI Entity type}
+\PYG{+w}{        }\PYG{n+nt}{enum}\PYG{p}{:}
+\PYG{+w}{          }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Project}
+\PYG{+w}{        }\PYG{n+nt}{type}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{string}
+\PYG{+w}{        }\PYG{n+nt}{x\PYGZhy{}ngsi}\PYG{p}{:}
+\PYG{+w}{          }\PYG{n+nt}{type}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Property}
+\PYG{+w}{      }\PYG{n+nt}{name}\PYG{p}{:}
+\PYG{+w}{        }\PYG{n+nt}{description}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Project name}
+\PYG{+w}{        }\PYG{n+nt}{example}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{MUEBLE\PYGZhy{}WC}
+\PYG{+w}{        }\PYG{n+nt}{type}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{string}
+\PYG{+w}{        }\PYG{n+nt}{x\PYGZhy{}ngsi}\PYG{p}{:}
+\PYG{+w}{          }\PYG{n+nt}{model}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{https://schema.org/name}
+\PYG{+w}{          }\PYG{n+nt}{type}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{Property}
+\PYG{+w}{          }\PYG{n+nt}{uri}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{https://schema.org/name}
+\PYG{+w}{          }\PYG{n+nt}{uri\PYGZhy{}prefix}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{https://schema.org/}
+\PYG{+w}{    }\PYG{l+lScalar+lScalarPlain}{// Other attributes ...}
+\PYG{+w}{    }\PYG{n+nt}{required}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{name}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{hasBudget}
+\end{Verbatim}

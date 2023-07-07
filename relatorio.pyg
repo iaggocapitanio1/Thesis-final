@@ -1,0 +1,33 @@
+schemas:
+  project:
+    type: object
+    title: Project
+    description: Contains the information of a project
+    properties:
+      id:
+        description: Unique identifier of the project
+        example: urn:ngsi-ld:Project:[name]
+        format: uri
+        type: string
+        x-ngsi:
+          type: Property
+      type:
+        description: NGSI Entity type
+        enum:
+          - Project
+        type: string
+        x-ngsi:
+          type: Property
+      name:
+        description: Project name
+        example: MUEBLE-WC
+        type: string
+        x-ngsi:
+          model: https://schema.org/name
+          type: Property
+          uri: https://schema.org/name
+          uri-prefix: https://schema.org/
+    // Other attributes ...
+    required:
+      - name
+      - hasBudget
